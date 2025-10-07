@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Light Checker</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Traffic Light Checker</h1>
+    <p>Click the button and enter a color</p>
+
+    <button onclick="checkColor()">Check Light</button>
+    <h3 id="result"></h3>
+
+    <script>
+    function checkColor() {
+      const colorInput = prompt("Enter a traffic light color (red, yellow, or green) :");
+
+      let resultElement = document.getElementById("result");
+      let actionMessage;
+      
+      const color = colorInput.toLowerCase();
+
+      switch (color) {
+        case 'red':
+          actionMessage = "Stop";
+          resultElement.style.color = "red";
+          break;
+        case 'yellow':
+          actionMessage = "Get Ready";
+          resultElement.style.color = "orange";
+          break;
+        case 'green':
+          actionMessage = "Go";
+          resultElement.style.color = "green";
+          break;
+        default:
+        if (colorInput === null || colorInput.trim() === "") {
+            actionMessage = "No color entered.";
+            resultElement.style.color = "gray";
+          } else {
+          actionMessage = `"${colorInput}" is not a valid traffic light color.`;
+          resultElement.style.color = "black";
+          break;
+      }
+    }
+      resultElement.innerHTML = actionMessage;
+    }
+    </script>
+
+</body>
+</html>

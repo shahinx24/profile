@@ -1,0 +1,341 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: white;
+            height: 55px;
+            padding: 0 12px;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .image {
+            height: 76px;
+            object-fit: contain;
+            margin-right: 13%;
+        }
+        img {
+            height: 22px;
+        }
+        .nav {
+        list-style: none;      /* remove dots */
+        padding: 0;
+        display: flex;
+        gap: 38px;
+        align-items: center;
+        }
+
+        .nav li a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        margin-left: 28px;
+        font-family:ui-sans-serif, system-ui, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+
+        .nav li a:hover {
+            background-color: lightgrey;
+            padding: 0px;
+            height: 90px;
+            width: auto;
+            padding: 10px;
+        }
+
+        .nav li a img {
+        vertical-align: middle;
+        margin-right: 8px;
+        height: 24px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100hv;
+        }
+        .div1 {
+            background-color: whitesmoke;
+            max-width: 100%;
+            padding: 9%;
+            position: relative;
+        }
+
+        .layer {
+            background-color: white;
+            display: flex;
+            width: 992px;
+            gap: 4px;
+            margin: 0;
+            border: none;
+            border-radius: 10px;
+            justify-content: space-between;
+            padding: 0px;
+            margin-left: auto;
+            margin-right: 45px;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .search {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            object-fit: fill;
+            margin-left: 0px;
+            padding: 20px 40px 10px 30px;
+            border: 2px solid #0080ff;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+        .search input {
+            border: none;
+            font-size: 20px;
+        }
+        #searchbt {
+            background-color: #0080ff;
+            color: white;
+            margin-right: 8px;
+            padding: 14px 28px;
+            cursor: pointer;
+            border-radius: 9px;
+            font-size: 15px;
+        }
+        i {
+            margin-right: 20px;
+            font-size: 28px;
+        }
+
+        .room,.searchbtn {
+            display: flex;
+        }
+        .room button,.searchbtn button {
+            background-color: white;
+            border: none;
+            padding: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        input[type="date"],.room button {
+            border: none;
+            cursor: pointer;
+            background-color: white;
+            padding: 19px 28px;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            object-fit:contain;
+        }
+        input[type="date"]:hover,.room button:hover {
+            background-color: whitesmoke;
+        }
+        .room,.date {
+            border-left: 2px solid whitesmoke;
+        }
+        input[name=srh] {
+            padding: 0px 40px;
+            border: none;
+        }
+
+        .pic {
+        position: absolute;
+        bottom: 30px;
+        left: 380px; 
+        display: flex;
+        transform: translateX(-50%);
+        justify-content: space-evenly;
+        align-items: center;
+        width: 300px;
+        gap: 38px;
+        }
+
+        .pic img {
+        height: 22px;
+        }
+
+.div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.hotel-deals-section .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hotel-deals-section h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.more-deals {
+    text-decoration: none;
+    color: #0177b5;
+    font-weight: 600;
+}
+
+.deals-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding-bottom: 10px;
+}
+
+.hotel-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgb(0 0 0 / 0.1);
+    min-width: 240px;
+    max-width: 240px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.hotel-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+.hotel-card img:hover {
+    transform: scale(1.05);
+}
+
+.hotel-info {
+    padding: 10px 12px 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel-info h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 5px 0 8px;
+    line-height: 1.2em;
+}
+
+.rating {
+    font-size: 0.78rem;
+    color: #666;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.score {
+    background-color: #2dd36f;
+    color: white;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+}
+
+.score.green {
+    background-color: #2dd36f;
+}
+
+.status {
+    font-weight: 700;
+}
+
+.reviews {
+    color: #999;
+}
+
+.location {
+    color: #999;
+}
+
+.deal-tag {
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    max-width: fit-content;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    user-select: none;
+}
+
+.deal-tag.red {
+    background-color: #c72c41;
+}
+
+.deal-tag.pink {
+    background-color: #ca3e55;
+}
+
+.offer-details {
+    list-style: none;
+    font-size: 0.7rem;
+    margin: 0 0 10px 0;
+    padding-left: 0;
+    color: #444;
+}
+
+.offer-details li {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+}
+
+.price small {
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.dates {
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.check-deal-btn {
+    background-color: #0076d6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+}
+
+.check-deal-btn:hover {
+    background-color: #005c9e;
+}
+
+@media (min-width: 768px) {
+    .deals-container {
+        overflow-x: visible;
+        justify-content: flex-start;
+    }
+}

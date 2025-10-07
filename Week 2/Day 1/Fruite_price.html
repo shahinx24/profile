@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fruit Price Checker</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 22px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fruit Price Checker</h1>
+    <p>Click the button and enter Fruite to see the price.</p>
+
+    <button onclick="checkPrice()">Check Fruit Price</button>
+    <h3 id="result"></h3>
+
+    <script>
+    function checkPrice() {
+      const fruitInput = prompt("Enter a fruit name :");
+
+      let resultElement = document.getElementById("result");
+      
+      const fruitName = fruitInput.toLowerCase();
+      let price;
+
+      resultElement.style.color = "black";
+
+      switch (fruitName) {
+        case 'apple':
+          price = "The price of an apple is $2.";
+          break;
+        case 'banana':
+          price = "The price of a banana is $1.";
+          break;
+        case 'orange':
+          price = "The price of an orange is $1.5.";
+          break;
+        case 'mango':
+          price = "The price of an mango is $3.";
+          break;
+        case 'grapes':
+          price = "The price of an grapes is $3.2.";
+          break;
+        case 'watermelon':
+          price = "The price of an watermelon is $1.8.";
+          break;
+        default:
+        if (fruitInput === null || fruitInput.trim() === "") {
+            price = "No fruit entered.";
+            resultElement.style.color = "orange";
+          } else {
+          price = `Sorry, "${fruitInput}" is not available.`;
+          resultElement.style.color = "red";
+          break;
+      }
+    }
+      resultElement.innerHTML = price;
+    }
+    </script>
+
+</body>
+</html>

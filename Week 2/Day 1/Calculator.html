@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
+
+    <h1>Simple Calculator</h1>
+    <p>Click the button to start the calculator.</p>
+
+    <button onclick="calculator()">Start Calculation</button>
+    <h3 id="result"> </h3>
+
+    <script>
+    function calculator() {
+      const num1Input = prompt("Enter the first number:");
+      const num2Input = prompt("Enter the second number:");
+      const operator = prompt("Enter an operator (+, -, *, /):");
+
+      const num1 = parseFloat(num1Input);
+      const num2 = parseFloat(num2Input);
+
+      let resultElement = document.getElementById("result");
+      let result;
+
+      if (isNaN(num1) || isNaN(num2)) {
+        resultElement.innerHTML = "Invalid input. Please enter valid numbers.";
+        resultElement.style.color = "red";
+        return;
+      }
+      
+      resultElement.style.color = "black";
+
+      switch (operator) {
+        case '+':
+          result = num1 + num2;
+          break;
+        case '-':
+          result = num1 - num2;
+          break;
+        case '*':
+          result = num1 * num2;
+          break;
+        case '/':
+          result = num1 / num2;
+          break;
+      }
+
+      resultElement.innerHTML = `Result: ${num1} ${operator} ${num2} = ${result}`;
+    }
+    </script>
+
+</body>
+</html>

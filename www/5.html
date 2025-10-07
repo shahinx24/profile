@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function missingNumber(arr)
+        {
+            let n=arr.length+1;
+            let total=n*(n+1)/2;
+            let sum=0;
+            for(let i=0;i<arr.length;i++)
+            {
+                sum+=arr[i];
+            }
+            return total-sum;
+        }
+        let numbers=[1,2,4,5];
+        console.log(missingNumber(numbers));
+    </script>
+</body>
+</html>

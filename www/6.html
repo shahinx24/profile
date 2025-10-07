@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function maxWordBold(str)
+        {
+            let words=str.split(" ");
+            let maxWord="";
+            for(let i=0;i<words.length;i++)
+            {
+                if(words[i].length>maxWord.length)
+                {
+                    maxWord=words[i];
+                }
+            }
+            return "<b>"+maxWord+"</b>";
+        }
+        let sentence="The quick brown fox jumped over the lazy dog";
+        console.log(maxWordBold(sentence));
+        document.body.innerHTML=maxWordBold(sentence);
+    </script>
+</body>
+</html>

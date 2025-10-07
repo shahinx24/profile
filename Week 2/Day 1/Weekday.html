@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weekend Checker</title>
+</head>
+<body style="text-align: center; font-family: sans-serif; margin-top: 50px;">
+
+    <h2>Check the Weekend</h2>
+    <p>Click the button and enter a number from 1 to 7.</p>
+
+    <button onclick="checkDay()">Check Number</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+    function checkDay() {
+      let userInput = prompt("Please enter a number between 1 and 7:");
+
+      let dayNumber = parseInt(userInput);
+
+      let resultElement = document.getElementById("result");
+      let dayName = "";
+
+      if (isNaN(dayNumber) || dayNumber < 1 || dayNumber > 7) {
+        resultElement.innerHTML = "Invalid input. Please enter a number between 1 and 7.";
+        resultElement.style.color = "red";
+      } else {
+        resultElement.style.color = "black";
+        
+        switch (dayNumber) {
+          case 1:
+            dayName = "Weekend";
+            break;
+          case 7:
+            dayName = "Weekend";
+            break;
+          case 2:
+            dayName = "Weekday";
+            break;
+          case 3:
+            dayName = "Weekday";
+            break;
+          case 4:
+            dayName = "Weekday";
+            break; 
+          case 5:
+            dayName = "Weekday";
+            break;
+          case 6:
+            dayName = "Weekday";  
+            break;
+        }
+        resultElement.innerHTML = dayName;
+      }
+    }
+    </script>
+
+</body>
+</html>

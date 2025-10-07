@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="inner-container">
+            <div class="content-left">
+                <h2>I AM </h2>
+                <h1>SHAHIN U</h1>
+                <p>I'm a web developer passionate about creating professional websites. Explore my skills, projects, and get in touch!</p>
+                <div class="social-links">
+                    <a href="www.linkedin.com/in/shahinu" target="_blank">
+                        <img src="in.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com" target="_blank">
+                        <img src="git.svg" alt="GitHub">
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shahinu886@gmail.com" target="_blank" rel="noopener">
+                    <img src="mail.svg" alt="Email">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="inste.svg" alt="instagram">
+                    </a>
+                    </div>
+            </div>
+            <div class="content-right">
+                <img src="output.png" alt="Profile Picture" class="profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <h3>Python</h3>
+                <p>Backend development and scripting.</p>
+            </div>
+            <div class="skill-item">
+                <h3>CSS</h3>
+                <p>Styling and responsive design.</p>
+            </div>
+            <div class="skill-item">
+                <h3>HTML</h3>
+                <p>Structure and semantics.</p>
+            </div>
+            <div class="skill-item">
+                <h3>JavaScript</h3>
+                <p>Interactive features and logic.</p>
+            </div>
+            <div class="skill-item">
+                <h3>PostgreSQL</h3>
+                <p>Manage Data Base and Store Data.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <h2>My Work</h2>
+        <div class="work-grid">
+            <div class="work-item">
+                <img src="work1.png" alt="Project 1">
+                <div class="work-content">
+                    <h3>Personal Website</h3>
+                    <p>A responsive portfolio site built with HTML, CSS, and JS. Features smooth navigation and modern design.</p>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="work2.jpg" alt="Project 2">
+                <div class="work-content">
+                    <h3>Trivago Cloning</h3>
+                    <p>Cloing of Trivago offcial Site and interactive Web page Create with HTML and styled with CSS.</p>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="work3.png" alt="Project 3">
+                <div class="work-content">
+                    <h3>W3 School Cloning</h3>
+                    <p>An interactive Navbar of W3 School Create with HTML and styled with CSS.</p>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="work4.png" alt="Project 4">
+                <div class="work-content">
+                    <h3>Supply Managment</h3>
+                    <p>A online Supply Managment for camp that bulid after disaster</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="What are you contacting me for? " required></textarea>
+            <button type="submit">Send Message</button>
+            <div class="social-media">
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="in.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com" target="_blank">
+                        <img src="git.svg" alt="GitHub">
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shahinu886@gmail.com" target="_blank" rel="noopener">
+                    <img src="mail.svg" alt="Email">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="inste.svg" alt="instagram">
+                    </a>
+                    </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple form submission handler (for demo - in real use, connect to backend)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            this.reset();
+        });
+
+        // Header scroll effect: Change when scrolled past home section
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            const homeHeight = window.innerHeight; // Home is 100vh, so use viewport height
+            if (window.scrollY > homeHeight) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+    </script>
+</body>
+</html>
