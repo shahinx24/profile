@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        ReturnFirstNonRepeatingChar = (str) => {
+    let charCount = {};
+    for (let char of str) {
+        charCount[char] = (charCount[char] || 0) + 1;
+    }
+    for (let char of str) {
+        if (charCount[char] === 1) {
+            return char;
+        }
+    }
+    return null;
+    }
+    let input = "soiss";
+    console.log(ReturnFirstNonRepeatingChar(input));
+    </script>
+</body>
+</html>

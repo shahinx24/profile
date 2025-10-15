@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        function sentenceWithMaxWords(sentences) {
+    let maxCount = 0;
+    let maxSentence = "";
+    for (let sentence of sentences) {
+        let words = sentence.split(" ");
+        let count = words.length;
+
+        if (count > maxCount) {
+            maxCount = count;
+            maxSentence = sentence;
+        }
+    }
+    return maxSentence;
+    }
+    let input = ["Welcome To Bridgeon", "Hello World", "Code Your Future With Bridgeon"];
+    console.log(sentenceWithMaxWords(input)); // Output: "Code Your Future With Bridgeon"
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="heading">My Heading</h1>
+<p id="text">This word whould change when you click the button </p>
+<button onclick="oneclick()">click me</button>
+<button onclick="twoClick()">Restore</button>
+
+<script>
+    function oneclick(){
+        document.getElementById("heading").innerHTML="New Heading";
+        document.getElementById("text").innerHTML="This gona be Changed ..!";
+    }
+
+    let originalHeading = document.getElementById("heading").innerHTML;
+    let originalText = document.getElementById("text").innerHTML;
+    
+    function twoClick() {
+    document.getElementById("heading").innerHTML = originalHeading;
+    document.getElementById("text").innerHTML = originalText;
+    }
+</script>
+</body>
+</html>
