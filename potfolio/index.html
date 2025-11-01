@@ -3,42 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Shahin U Portfolio</title>
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="site-header" id="header">
+  <nav class="navbar">
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-list" id="nav-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
     
-    <section id="home">
+    <section id="home" class="home-section" data-aos="fade-up">
         <div class="inner-container">
             <div class="content-left">
-                <h2>I AM </h2>
+                <h2>I AM</h2>
                 <h1>SHAHIN U</h1>
                 <p>I'm a web developer passionate about creating professional websites. Explore my skills, projects, and get in touch!</p>
                 <div class="social-links">
-                    <a href="www.linkedin.com/in/shahinu" target="_blank">
+                    <a href="https://www.linkedin.com/in/shahinu" target="_blank">
                         <img src="in.svg" alt="LinkedIn">
                     </a>
                     <a href="https://github.com" target="_blank">
                         <img src="git.svg" alt="GitHub">
                     </a>
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shahinu886@gmail.com" target="_blank" rel="noopener">
-                    <img src="mail.svg" alt="Email">
+                        <img src="mail.svg" alt="Email">
                     </a>
                     <a href="https://www.instagram.com" target="_blank">
-                        <img src="inste.svg" alt="instagram">
+                        <img src="inste.svg" alt="Instagram">
                     </a>
-                    </div>
+                </div>
             </div>
             <div class="content-right">
                 <img src="output.png" alt="Profile Picture" class="profile-pic">
@@ -46,112 +56,148 @@
         </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="skills-section" data-aos="fade-up">
         <h2>My Skills</h2>
         <div class="skills-grid">
-            <div class="skill-item">
+            <div class="skill-item" data-aos="zoom-in">
                 <h3>Python</h3>
                 <p>Backend development and scripting.</p>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
                 <h3>CSS</h3>
                 <p>Styling and responsive design.</p>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
                 <h3>HTML</h3>
                 <p>Structure and semantics.</p>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
                 <h3>JavaScript</h3>
                 <p>Interactive features and logic.</p>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
                 <h3>PostgreSQL</h3>
-                <p>Manage Data Base and Store Data.</p>
+                <p>Manage Database and Store Data.</p>
             </div>
         </div>
     </section>
 
-    <section id="work">
+    <section id="work" class="work-section" data-aos="fade-up">
         <h2>My Work</h2>
         <div class="work-grid">
-            <div class="work-item">
+            <div class="work-item" data-aos="flip-left">
                 <img src="work1.png" alt="Project 1">
                 <div class="work-content">
                     <h3>Personal Website</h3>
                     <p>A responsive portfolio site built with HTML, CSS, and JS. Features smooth navigation and modern design.</p>
                 </div>
             </div>
-            <div class="work-item">
+            <div class="work-item" data-aos="flip-left" data-aos-delay="100">
                 <img src="work2.jpg" alt="Project 2">
                 <div class="work-content">
                     <h3>Trivago Cloning</h3>
-                    <p>Cloing of Trivago offcial Site and interactive Web page Create with HTML and styled with CSS.</p>
+                    <p>Cloning of Trivago official site and interactive web page created with HTML and styled with CSS.</p>
                 </div>
             </div>
-            <div class="work-item">
+            <div class="work-item" data-aos="flip-left" data-aos-delay="200">
                 <img src="work3.png" alt="Project 3">
                 <div class="work-content">
                     <h3>W3 School Cloning</h3>
-                    <p>An interactive Navbar of W3 School Create with HTML and styled with CSS.</p>
+                    <p>An interactive Navbar of W3 School created with HTML and styled with CSS.</p>
                 </div>
             </div>
-            <div class="work-item">
+            <div class="work-item" data-aos="flip-left" data-aos-delay="300">
                 <img src="work4.png" alt="Project 4">
                 <div class="work-content">
-                    <h3>Supply Managment</h3>
-                    <p>A online Supply Managment for camp that bulid after disaster</p>
+                    <h3>Supply Management</h3>
+                    <p>An online Supply Management for camps built after disasters.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact-section" data-aos="fade-up">
         <h2>Contact Me</h2>
-        <form>
+        <form class="contact-form">
             <input type="text" placeholder="Your Name" required>
-            <textarea placeholder="What are you contacting me for? " required></textarea>
+            <textarea placeholder="What are you contacting me for?" required></textarea>
             <button type="submit">Send Message</button>
             <div class="social-media">
-                    <a href="https://www.linkedin.com" target="_blank">
-                        <img src="in.svg" alt="LinkedIn">
-                    </a>
-                    <a href="https://github.com" target="_blank">
-                        <img src="git.svg" alt="GitHub">
-                    </a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shahinu886@gmail.com" target="_blank" rel="noopener">
+                <a href="https://www.linkedin.com/in/shahinu" target="_blank">
+                    <img src="in.svg" alt="LinkedIn">
+                </a>
+                <a href="https://github.com" target="_blank">
+                    <img src="git.svg" alt="GitHub">
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shahinu886@gmail.com" target="_blank" rel="noopener">
                     <img src="mail.svg" alt="Email">
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank">
-                        <img src="inste.svg" alt="instagram">
-                    </a>
-                    </div>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="inste.svg" alt="Instagram">
+                </a>
+            </div>
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    <footer class="site-footer">
+        <p>&copy; 2023 Shahin U Portfolio. All rights reserved.</p>
     </footer>
 
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        // Simple form submission handler (for demo - in real use, connect to backend)
-        document.querySelector('form').addEventListener('submit', function(e) {
+        // Initialize AOS for scroll animations
+        AOS.init();
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', function() {
+            const button = document.querySelector('.scroll-to-top');
+            if (window.scrollY > 300) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        });
+
+        // Form submission handler
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Thank you for your message! I\'ll get back to you soon.');
             this.reset();
         });
 
-        // Header scroll effect: Change when scrolled past home section
+        // Header scroll effect
         window.addEventListener('scroll', function() {
             const header = document.getElementById('header');
-            const homeHeight = window.innerHeight; // Home is 100vh, so use viewport height
+            const homeHeight = window.innerHeight;
             if (window.scrollY > homeHeight) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
             }
         });
-        
+
+        // Add click interactivity to work items
+        document.querySelectorAll('.work-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const title = this.querySelector('h3').textContent;
+                alert('You clicked on ' + title + '! Check out the full project soon.');
+            });
+        });
+        const menuToggle = document.getElementById('menu-toggle');
+  const navList = document.getElementById('nav-list');
+
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navList.classList.toggle('active');
+  });
     </script>
 </body>
 </html>
